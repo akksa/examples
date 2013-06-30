@@ -1,0 +1,7 @@
+Be aware that there are many bad tutorials and books about node.js.
+Here is a good roadmap to avoid wasting your time and learn effectvely:
+http://javascriptissexy.com/learn-node-js-completely-and-with-confidence/
+
+Or in summary:
+1. Start with nodebeginner: http://www.nodebeginner.org/
+2. Read Professional node.js: http://it-ebooks.info/book/984/
