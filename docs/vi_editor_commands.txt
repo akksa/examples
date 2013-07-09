@@ -1,0 +1,5 @@
+Esc+G      ====> go the end of the file
+gg OR (1G) ====> go to beginning of the file
+$          ====> End of the current line
+10G        ====> Go to 10th Line
+
