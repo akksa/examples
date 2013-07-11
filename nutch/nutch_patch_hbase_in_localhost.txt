@@ -1,0 +1,28 @@
+Index: conf/gora.properties
+===================================================================
+--- conf/gora.properties	(revision 1500070)
++++ conf/gora.properties	(working copy)
+@@ -14,6 +14,7 @@
+ # limitations under the License.
+ 
+ #gora.datastore.default=org.apache.gora.mock.store.MockDataStore
++gora.datastore.default=org.apache.gora.hbase.store.HBaseStore
+ #gora.datastore.autocreateschema=true
+ 
+ ###############################
+Index: ivy/ivy.xml
+===================================================================
+--- ivy/ivy.xml	(revision 1500070)
++++ ivy/ivy.xml	(working copy)
+@@ -111,9 +111,9 @@
+     <dependency org="mysql" name="mysql-connector-java" rev="5.1.18" conf="*->default"/> 
+     -->
+     <!-- Uncomment this to use HBase as Gora backend. -->
+-    <!-- 
++     
+     <dependency org="org.apache.gora" name="gora-hbase" rev="0.3" conf="*->default" />
+-    -->
++    
+     <!-- Uncomment this to use Accumulo as Gora backend. -->
+     <!-- 
+     <dependency org="org.apache.gora" name="gora-accumulo" rev="0.3" conf="*->default" />
