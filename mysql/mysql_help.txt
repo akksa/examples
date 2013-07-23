@@ -1,0 +1,3 @@
+Ctrl+p -- mysql command line history
+mysql -u root -p --local-infile -- to load the CSV file into Table
+Ex:LOAD DATA LOCAL INFILE '/home/saravanan/Downloads/train.csv' INTO TABLE k_train (ACTION,RESOURCE,MGR_ID,ROLE_ROLLUP_1,ROLE_ROLLUP_2,ROLE_DEPTNAME,ROLE_TITLE,ROLE_FAMILY_DESC,ROLE_FAMILY,ROLE_CODE);

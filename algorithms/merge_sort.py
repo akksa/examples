@@ -1,12 +1,12 @@
 #Akksa
-
+#Pseudo code available in http://en.wikipedia.org/wiki/Merge_sort
 
 
 def merge(left, right):
     result = []
     while left or right:
         if left and right:
-            if left[0] <= right[0]:
+            if left[0] >= right[0]:
                 result.append(left[0])
                 left = left[1:]
             else:
