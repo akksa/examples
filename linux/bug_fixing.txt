@@ -1,0 +1,12 @@
+Error
+URLError: <urlopen error [Errno 13] Permission denied>
+
+Fix:
+getsebool -a | grep httpd
+# Check httpd_can_network_connect –> off -- Means, It cannot cannot to external network
+#change it to on by 
+setsebool -P httpd_can_network_connect=1  
+# It might take sometime (max 10 mins)
+getsebool -a | grep httpd
+# make sure, it has the following value
+httpd_can_network_connect –> on
